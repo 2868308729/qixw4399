@@ -12,10 +12,10 @@ import java.util.List;
  * on  16-2-15.
  * 引导页的适配器
  */
-public class GuidePageAdapter extends PagerAdapter {
+public class ImagePageAdapter extends PagerAdapter {
     private List<ImageView> list;
 
-    public GuidePageAdapter(List<ImageView> list) {
+    public ImagePageAdapter(List<ImageView> list) {
         this.list = list;
     }
     @Override

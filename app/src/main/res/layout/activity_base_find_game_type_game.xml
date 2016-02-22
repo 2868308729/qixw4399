@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.qianfeng.qixw4399.findgame.ui.BaseFindGameTypeGameActivity">
+    <RelativeLayout
+        android:gravity="center"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:gravity="center"
+            android:id="@+id/baseTypeGame_back_iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/m4399_png_actionbar_item_back"/>
+        <TextView
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_toEndOf="@id/baseTypeGame_back_iv"
+            android:id="@+id/baseTypeGame_title_tv"
+            android:layout_width="wrap_content"
+            android:text="每日新游"
+            android:layout_height="30dp" />
+        <ImageView
+            android:src="@drawable/m4399_png_actionbar_item_download"
+            android:layout_alignParentRight="true"
+            android:id="@+id/baseTypeGame_down_iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="@color/white_gray"
+        android:id="@+id/baseTypeGame_content_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></RelativeLayout>
+</LinearLayout>

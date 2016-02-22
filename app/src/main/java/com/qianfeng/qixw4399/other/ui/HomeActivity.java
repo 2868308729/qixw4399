@@ -41,11 +41,11 @@ public class HomeActivity extends FragmentActivity implements FindGameFragment.O
                 return ;
             }
             //保存当前选中的
-            pressedButton= radioButton;
+                pressedButton= radioButton;
 
-            int index = 0;
-            //判断选中的Id的位置
-            switch(checkedId){
+                int index = 0;
+                //判断选中的Id的位置
+                switch(checkedId){
                 case R.id.home_radio_findGame:
                     index =0;
                     break;
@@ -100,6 +100,7 @@ public class HomeActivity extends FragmentActivity implements FindGameFragment.O
         transaction.show(fragments[0]);
         //提交
         transaction.commit();
+        radioGroup.setOnCheckedChangeListener(checkedListener);
     }
 
     @Override

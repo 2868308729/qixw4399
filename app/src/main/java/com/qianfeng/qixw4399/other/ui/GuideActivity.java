@@ -4,9 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.media.Image;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -14,7 +12,7 @@ import android.widget.ImageView;
 
 import com.qianfeng.qixw4399.MainActivity;
 import com.qianfeng.qixw4399.R;
-import com.qianfeng.qixw4399.other.adapter.GuidePageAdapter;
+import com.qianfeng.qixw4399.other.adapter.ImagePageAdapter;
 import com.qianfeng.qixw4399.other.utils.Qixw4399Constant;
 
 import java.util.ArrayList;
@@ -27,7 +25,7 @@ import java.util.List;
  */
 public class GuideActivity extends Activity {
     private ViewPager guideContent; //引导页的ViewPager
-    private GuidePageAdapter adapter;//引导页适配器
+    private ImagePageAdapter adapter;//引导页适配器
     private Button guideButton;//立即进入
 
     @Override
@@ -50,7 +48,7 @@ public class GuideActivity extends Activity {
             iv.setScaleType(ImageView.ScaleType.FIT_XY);
             list.add(iv);
         }
-        adapter = new GuidePageAdapter(list);
+        adapter = new ImagePageAdapter(list);
         //设置Viewpage的监听器
         guideContent.setAdapter(adapter);
 

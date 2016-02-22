@@ -11,9 +11,11 @@
     <RelativeLayout
         android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="80dp"
+        android:background="@color/black"
         android:id="@+id/findgame_game_rl">
         <Button
+            android:layout_marginTop="10dp"
             android:id="@+id/glitem1Detail_down_btn"
             android:layout_alignParentRight="true"
             android:layout_width="80dp"
@@ -22,7 +24,7 @@
             android:text="@string/download"
             android:textColor="@color/white"/>
         <ImageView
-            android:layout_margin="5dp"
+            android:layout_margin="10dp"
             android:layout_alignParentLeft="true"
             android:id="@+id/glitem1Detail_header_iv"
             android:layout_width="60dp"
@@ -30,11 +32,13 @@
             android:src="@drawable/m4399_png_widget_icon"
             />
         <TextView
-            android:layout_margin="5dp"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
             android:id="@+id/glitem1Detail_name_tv"
             android:layout_toRightOf="@id/glitem1Detail_header_iv"
             android:layout_width="match_parent"
             android:layout_height="30dp"
+            android:text="sdfdsf"
             />
         <LinearLayout
             android:id="@+id/glitem1Detail_ll"
@@ -43,19 +47,22 @@
             android:layout_width="match_parent"
             android:layout_height="30dp">
             <TextView
+                android:textColor="@color/white"
                 android:id="@+id/glitem1Detail_downcount_tv"
                 android:layout_marginLeft="5dp"
                 android:layout_width="0dp"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:layout_height="30dp"
                 android:text="37.2d+sdf"/>
             <TextView
+                android:textColor="@color/white"
                 android:id="@+id/glitem1Detail_size_tv"
                 android:layout_width="0dp"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:layout_height="30dp"
                 android:text="37.03M"/>
             <TextView
+                android:textColor="@color/white"
                 android:id="@+id/glitem1Detail_type_tv"
                 android:layout_width="0dp"
                 android:layout_weight="3"

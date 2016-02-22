@@ -2,9 +2,10 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/findgame_game_rl">
+    android:layout_margin="5dp"
+    android:id="@+id/game_rl">
     <Button
-        android:id="@+id/findgame_lvitem_down_btn"
+        android:id="@+id/game_down_btn"
         android:layout_alignParentRight="true"
         android:layout_width="80dp"
         android:layout_height="40dp"
@@ -12,52 +13,53 @@
         android:text="@string/download"
         android:textColor="@color/white"/>
     <ImageView
-        android:layout_margin="5dp"
+        android:layout_marginTop="5dp"
         android:layout_alignParentLeft="true"
-        android:id="@+id/findgame_lvitem_header_iv"
+        android:id="@+id/game_header_iv"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:src="@drawable/m4399_png_widget_icon"
         />
     <TextView
         android:layout_margin="5dp"
-        android:id="@+id/findgame_lvitem_name_tv"
-        android:layout_toRightOf="@id/findgame_lvitem_header_iv"
+        android:id="@+id/game_name_tv"
+        android:layout_toRightOf="@id/game_header_iv"
         android:layout_width="wrap_content"
         android:text="sfsdfdsafdsf"
         android:layout_height="20dp"
         />
     <LinearLayout
-        android:id="@+id/findgame_lvitem_ll"
-        android:layout_toRightOf="@id/findgame_lvitem_header_iv"
-        android:layout_below="@id/findgame_lvitem_name_tv"
-        android:layout_width="match_parent"
+        android:gravity="center"
+        android:id="@+id/game_ll"
+        android:layout_toRightOf="@id/game_header_iv"
+        android:layout_below="@id/game_name_tv"
+        android:layout_width="wrap_content"
         android:layout_height="20dp">
         <ImageView
-            android:layout_margin="5dp"
+            android:layout_marginLeft="5dp"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:scaleType="fitXY"
             android:src="@drawable/m4399_png_rank_trend_up_arrow"/>
         <TextView
-            android:id="@+id/findgame_lvitem_downcount_tv"
-            android:layout_marginLeft="5dp"
-            android:layout_width="0dp"
-            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/game_downcount_tv"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:singleLine="true"
             android:text="37.2d+sdf"/>
         <TextView
-            android:id="@+id/findgame_lvitem_size_tv"
-            android:layout_width="0dp"
-            android:layout_weight="2"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/game_size_tv"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="37.03M"/>
     </LinearLayout>
     <TextView
-        android:id="@+id/findgame_lvitem_content_tv"
+        android:id="@+id/game_content_tv"
         android:layout_marginTop="5dp"
         android:layout_marginLeft="70dp"
-        android:layout_below="@id/findgame_lvitem_ll"
+        android:layout_below="@id/game_ll"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="sdf"/>
