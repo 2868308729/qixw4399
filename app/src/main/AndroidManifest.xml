@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qianfeng.qixw4399">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".other.utils.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.Light.NoTitleBar">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 引导页Activity -->
+        <activity android:name=".other.ui.GuideActivity" />
+        <!-- 主页面的Activity -->
+        <activity android:name=".other.ui.HomeActivity" />
+        <activity android:name=".other.ui.NotifyActivity" />
+        <activity android:name=".findgame.ui.HeaderImgActivity" />
+        <activity android:name=".findgame.ui.FindGameTJDetailActivity" />
+        <activity android:name=".findgame.ui.GlItem1DetailActivity" />
+        <activity android:name=".findgame.ui.GlItem2DetailActivity"></activity>
+    </application>
+
+</manifest>

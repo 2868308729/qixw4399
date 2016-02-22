@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#000"
+    android:layout_height="match_parent">
+    <!--顶部内容-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/base_search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/m4399_png_search_association_search_logo"/>
+        <ImageView
+            android:id="@+id/base_search_text"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/thirdparty_swipeback_shadow_bottom"
+            android:layout_width="280dp"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/base_notify"
+            android:layout_width="wrap_content"
+            android:src="@drawable/m4399_png_actionbar_item_msg_inbox"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@id/base_search_text"
+            />
+        <ImageView
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/base_download"
+            android:src="@drawable/m4399_png_actionbar_item_download"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            />
+    </RelativeLayout>
+
+    <!--内容区域-->
+    <LinearLayout
+        android:id="@+id/base_content"
+        android:background="#00f"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    </LinearLayout>
+
+
+</LinearLayout>

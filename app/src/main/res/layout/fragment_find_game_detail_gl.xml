@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.qianfeng.qixw4399.findgame.ui.FindGameDetailGLFragment">
+
+    <ListView
+        android:id="@+id/gameDetail_gl_listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+    <ListView
+        android:layout_below="@id/gameDetail_gl_listView1"
+        android:id="@+id/gameDetail_gl_listView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+    <Button
+        android:layout_below="@id/gameDetail_gl_listView2"
+        android:id="@+id/gameDetail_gl_btn"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="查看更多>>"/>
+</RelativeLayout>

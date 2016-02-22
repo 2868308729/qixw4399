@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/gameDetail_sp_ll"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/gameDetail_header_iv"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/m4399_png_game_detail_guide_icon_video"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="60dp">
+        <TextView
+            android:id="@+id/gameDetail_header_tv"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="123"/>
+        <TextView
+            android:id="@+id/gameDetail_count_tv"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="123213"/>
+    </LinearLayout>
+</LinearLayout>
